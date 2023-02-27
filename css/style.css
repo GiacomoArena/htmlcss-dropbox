@@ -19,9 +19,11 @@ body{
 /* HEADER RULES */
 
 .menu-bar{
+  position: fixed;
+  z-index: 999;
   width: 100vw;
   height: 70px;
-  background-color: rgba(137, 43, 226, 0.663);
+  background-color:#FFFFFF;
   justify-content: space-between;
 }
 
@@ -32,4 +34,54 @@ body{
 
 .menu-bar section ul li{
   margin: 0 20px;
+}
+.menu-bar section ul li a{
+  text-decoration: none;
+  color: black;
+}
+/* parte di jumbotron */
+header{
+  background-color: #B4D0E7;
+}
+.jumbotron{
+  padding-top: 70px;
+  background-color: #B4D0E7;
+  width: 80%;
+  height: 700px;
+  margin: 0 auto;
+  position: relative;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.titolo-j{
+  font-size: 3rem;
+  width: 100%;
+  min-width: 1200px;
+  max-width: 1030px;
+  height: 150px;
+  margin-top: 7%;
+}
+
+.descrizione-j{
+  flex-direction: column;
+  margin-top: 30px;
+  max-width: 400px;
+}
+.blocco-img img{
+  width: 800px;
+  position: absolute;
+  margin-top: 35px;
+  margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+/* MAIN RULES */
+main{
+  padding-top: 70px;
 }
