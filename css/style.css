@@ -4,7 +4,32 @@
   box-sizing: border-box;
 }
 
-
+/* GENERAL RULES */
 body{
-  
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.d-flex{
+  display: flex;
+}
+
+
+
+
+
+/* HEADER RULES */
+
+.menu-bar{
+  width: 100vw;
+  height: 70px;
+  background-color: rgba(137, 43, 226, 0.663);
+  justify-content: space-between;
+}
+
+.menu-bar section ul{
+  list-style: none;
+  align-items: center;
+}
+
+.menu-bar section ul li{
+  margin: 0 20px;
 }
