@@ -11,7 +11,15 @@ body{
 .d-flex{
   display: flex;
 }
+ul li a{
+  text-decoration: none;
+  color: black;
+}
 
+ul{
+  list-style: none;
+  align-items: center;
+}
 
 
 
@@ -27,18 +35,12 @@ body{
   justify-content: space-between;
 }
 
-.menu-bar section ul{
-  list-style: none;
-  align-items: center;
-}
+
 
 .menu-bar section ul li{
   margin: 0 20px;
 }
-.menu-bar section ul li a{
-  text-decoration: none;
-  color: black;
-}
+
 /* parte di jumbotron */
 header{
   background-color: #B4D0E7;
@@ -83,5 +85,40 @@ header{
 
 /* MAIN RULES */
 main{
-  padding-top: 70px;
+  padding-top: 180px;
+}
+.container{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.col{
+  position: relative;
+  border: 1px solid black;
+  height: 700px;
+  width: calc(100% / 3);
+  margin: 30px 20px;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.mini-icone{
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+} 
+
+.caratteristiche-col{
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid black;
+}
+.caratteristiche-col>span{
+  display: block;
+}
+
+.mezza-linea{
+  width: 50px;
 }
