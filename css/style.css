@@ -112,7 +112,7 @@ main{
 
 .caratteristiche-col{
   margin-top: 35px;
-  padding-top: 25px;
+  padding: 25px;
   border-top: 1px solid black;
 }
 .caratteristiche-col>span{
@@ -121,4 +121,66 @@ main{
 
 .mezza-linea{
   width: 50px;
+}
+
+
+
+.third-row{
+  height: 100%;
+}
+.contatta{
+  position: relative;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  height: 200px;
+  margin-bottom: 100px;
+  border: 1px solid black;
+  /* pero ora poi si toglie */
+  line-height: 45px;
+}
+p.icon{
+  line-height: 30px; /*valore di prova per ora*/
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.link-contatta{
+  position: absolute;
+  right: 10px;
+  top: 50px;
+}
+
+
+
+.fourth-row{
+  height: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+}
+.main-div{
+  width: 50%;
+}
+.main-div img{
+  width: 100%;
+}
+
+.aside-section{
+  margin: 0 30px;
+  width: 42%;
+  height: 304px;
+}
+
+
+
+.fifth-row{
+  flex-wrap: wrap;
+}
+.vantaggi-img{
+  width: calc(100% / 4);
+  margin: 0 30px;
+  height: 400px;
+}
+.vantaggi-img img{
+  width: 100%;
 }
