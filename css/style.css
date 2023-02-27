@@ -184,3 +184,36 @@ p.icon{
 .vantaggi-img img{
   width: 100%;
 }
+
+
+
+
+.sixth-row{
+margin-bottom: 100px;
+}
+
+
+
+
+
+
+.container2{
+  
+}
+
+.big-box{
+  width: 400px;
+  min-width: 400px;
+}
+.box-contenitore{
+  flex-wrap: wrap;
+}
+.box{
+  width:200px;
+  height: 200px;
+  background-color: blueviolet;
+}
+
+.testo-centrale{
+  
+}
