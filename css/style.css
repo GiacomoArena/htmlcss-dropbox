@@ -213,14 +213,26 @@ main{
 .contatta{
   position: relative;
   margin: 0 auto;
-  flex-direction: column;
-  align-content: space-around;
   width: calc(100% - 40px);
   height: 200px;
   margin-bottom: 100px;
   border: 1px solid #D0D0D3;
-  font-size: 13px;
   line-height: 45px;
+}
+.contatta h2{
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: 800;
+}
+.contatta h3{
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: 800;
+}
+.contatta span{
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: 600;
 }
 p.icon{
   line-height: 30px; /*valore di prova per ora*/
@@ -228,13 +240,17 @@ p.icon{
   border-bottom: 1px solid #D0D0D3;
 }
 .link-contatta{
+  font-size: 13px;
   position: absolute;
   right: 10px;
   top: 50px;
 }
+.link-contatta a{
+  padding: 7px 45px;
+}
+/* \\proprietà third-row */
 
-
-
+/* proprietà fourth-row */
 .fourth-row{
   height: 100%;
   flex-wrap: wrap;
@@ -252,28 +268,63 @@ p.icon{
 .aside-section{
   margin: 0 30px;
   width: 42%;
+  max-width: 485px;
   height: 304px;
+}
+.aside-section p{
+  margin: 20px 0;
+  font-size: 13px;
+  font-weight: 520;
+}
+.aside-section a{
+  padding: 5px 10px;
+  border:2px solid  gray;
+}
+.aside-section a:hover{
+  text-decoration: underline;
 }
 
 
+/* \\proprietà fourth-row */
 
+.title-fifth-row{
+  margin: 35px 0px;
+}
 .fifth-row{
   flex-wrap: wrap;
+  font-size: 13px;
+  font-weight: 520;
 }
 .vantaggi-img{
   width: calc(100% / 4);
   margin: 0 30px;
   height: 400px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 .vantaggi-img img{
   width: 100%;
+}
+.vantaggi-img h3{
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 800;
 }
 
 
 
 
 .sixth-row{
+  margin-top: 10%;
 margin-bottom: 100px;
+}
+.sixth-row h2{
+  max-width: 400px;
+  font-weight: 800;
+}
+.sixth-row h2{
+  max-width: 400px;
+  font-weight: 800;
 }
 
 
