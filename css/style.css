@@ -283,10 +283,10 @@ p.icon{
 .aside-section a:hover{
   text-decoration: underline;
 }
-
-
 /* \\proprietà fourth-row */
 
+
+/* proprietà fifth-row */
 .title-fifth-row{
   margin: 35px 0px;
 }
@@ -310,10 +310,10 @@ p.icon{
   margin-bottom: 15px;
   font-weight: 800;
 }
+/* \\proprietà fifth-row */
 
 
-
-
+/* proprietà sixth-row */
 .sixth-row{
   margin-top: 10%;
 margin-bottom: 100px;
@@ -322,10 +322,14 @@ margin-bottom: 100px;
   max-width: 400px;
   font-weight: 800;
 }
-.sixth-row h2{
-  max-width: 400px;
-  font-weight: 800;
+.sixth-row a{
+  color: #0061FF;
+  font-weight: 700;
 }
+.sixth-row a:hover{
+  text-decoration: underline;
+}
+/*\\ proprietà sixth-row */
 
 
 
@@ -333,10 +337,11 @@ margin-bottom: 100px;
 
 
 .container2{
-  
+  justify-content: space-between;
 }
 
 .big-box{
+  justify-content: space-between;
   width: 400px;
   min-width: 400px;
 }
@@ -345,12 +350,18 @@ margin-bottom: 100px;
   align-content: flex-start;
 }
 .box{
+  position: relative;
   width:200px;
   height: 200px;
   background-color: blueviolet;
 }
 .box img{
-  object-fit: cover;
+  filter: invert(1);
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .b1{
 background-color: #A2D39B;
@@ -379,14 +390,23 @@ background-color: #A2D39B;
 
 .testo-centrale{
   background-color: #F5F5F5;
+  width: 100%;
+  text-align: justify;
   height: 400px;
   overflow: auto;
+  padding: 5%;
+  padding-top: 30px;
 }
-
-
-
-
-
+.testo-centrale img{
+  width: 130px;
+}
+.testo-centrale p{
+  font-weight: 600;
+  margin-top: 20px;
+}
+.testo-centrale h1{
+  margin:0;
+}
 
 .rettangolo-box{
   justify-content: space-around;
@@ -395,4 +415,91 @@ background-color: #A2D39B;
   height: 250px;
   margin-bottom: 100px;
   background-color: #B4D0E7;
+}
+.rettangolo-box h2{
+  max-width: 300px;
+  font-weight: 800;
+  color: #61082B;
+}
+.rettangolo-box a{
+  font-weight: 600;
+  padding: 7px 30px;
+  background-color: white;
+}
+
+.last-div h2{
+  font-size: 1.7rem;
+  margin: 30px 0px;
+}
+.curiosità{
+  position: relative;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 80px;
+  height: 20%;
+  border-top: 1px solid #D0D0D3;
+  cursor: pointer;
+}
+.curiosità p{
+  font-size: 15px;
+  font-weight: 800;
+  padding: 15px 0;
+}
+.b-bottom{
+  border-bottom:  1px solid #D0D0D3;
+}
+
+
+
+
+
+/* BONUS RULES */
+.bonus2{
+  font-size: 14px;
+  padding: 10px 0;
+  opacity: 0;
+  display: none;
+  transition: all 2s;
+  color: #8b8a8a;
+}
+.curiosità:hover .bonus2{
+  opacity: 1;
+  display: block;
+}
+/* regole per la freccia verso il basso che con hover andrà verso l'alto*/
+.arrow-hover .arrow-down{
+  position: absolute;
+  right: 0%;
+  top: 30px;
+}
+.arrow-hover .arrow-up{
+  position: absolute;
+  right: 0%;
+  top: 30px;
+  display: none;
+}
+.curiosità:hover .arrow-up{
+  display: inline-block;
+}
+.curiosità:hover .arrow-down{
+  display: none;
+}
+
+/* \\\ BONUS RULES */
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  margin-top: 2000px;
 }
