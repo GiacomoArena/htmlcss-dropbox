@@ -132,40 +132,36 @@ main{
 .col{
   position: relative;
   border: 1px solid #D0D0D3;
-  height: 800px;
+  height: 900px;
   width: calc(100% / 3);
   margin: 30px 20px;
   flex-direction: column;
   align-items: center;
   
 }
-
-.mini-icone{
-  font-weight: 550;
-  position: absolute;
-  top: 5px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-} 
-
+.mini-icon{
+  margin-top: 8px;
+}
 .caratteristiche-col{
-  margin-top: 35px;
-  padding: 25px;
+  margin-top: 10px;
+  padding-left: 15px;
   border-top: 1px solid #D0D0D3;
-  line-height: 35px;
+  /* line-height: 35px; */
 }
-.caratteristiche-col>span{
-  display: block;
-}
+
 .mezza-linea{
-  width: 50px;
+  font-weight: 100;
+  margin: 10px 0;
   color: #D0D0D3;
 }
 .titolo-h3{
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-weight: 900;
   font-size: 20px;
 }
 .prezzo{
+  font-size: 15px;
   font-weight: 900;
 }
 .durata-servizio{
@@ -175,19 +171,55 @@ main{
   color: #71808C;
 }
 
+.second-row ul li{
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: 20px;
+}
+.second-row ul li a i{
+  font-size: 12px;
+}
+.prova-gratis{
+  margin: 40px 20px;
+  font-size: 13px;
+  }
+.acquista-ora{
+  font-size: 13px;
+  font-weight: 700;
+}
+.acquista-ora a{
+  color:#0061FF;
+}
+.acquista-ora a:hover{
+  text-decoration: underline;
+}
+.punti-salienti{
+  font-size: 15px;
+  font-weight: 800;
+  margin-top: 40px;
+}
+.second-ul{
+  font-weight: 600;
+}
+.fa-check{
+  color: #0061FF;
+}
+/* /proprietà second-row */
 
-
+/* proprietà third-row */
 .third-row{
   height: 100%;
 }
 .contatta{
   position: relative;
   margin: 0 auto;
+  flex-direction: column;
+  align-content: space-around;
   width: calc(100% - 40px);
   height: 200px;
   margin-bottom: 100px;
   border: 1px solid #D0D0D3;
-  /* pero ora poi si toglie */
+  font-size: 13px;
   line-height: 45px;
 }
 p.icon{
