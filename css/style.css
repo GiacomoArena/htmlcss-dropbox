@@ -6,12 +6,12 @@
 
 /* GENERAL RULES */
 body{
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  font-family: 'Noto Sans', sans-serif;
 }
 .d-flex{
   display: flex;
 }
-ul li a{
+a{
   text-decoration: none;
   color: black;
 }
@@ -20,8 +20,16 @@ ul{
   list-style: none;
   align-items: center;
 }
-
-
+.blue-link{
+  color: white;
+  background-color: #0061FF;
+  padding: 6px 15px;
+}
+.titolo-h2{
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin: 15px 0;
+}
 
 
 /* HEADER RULES */
@@ -46,31 +54,41 @@ header{
   background-color: #B4D0E7;
 }
 .jumbotron{
-  padding-top: 70px;
+  padding-top: 20px;
   background-color: #B4D0E7;
   width: 80%;
-  height: 700px;
+  height: 650px;
   margin: 0 auto;
   position: relative;
   flex-wrap: wrap;
   align-content: flex-start;
 }
 .titolo-j{
-  font-size: 3rem;
+  font-size: 2.8rem;
   width: 100%;
-  min-width: 1200px;
-  max-width: 1030px;
-  height: 150px;
+  /* min-width: 1200px; */
+  max-width: 1200px;
+  /* height: 150px; */
   margin-top: 7%;
 }
 
 .descrizione-j{
+  max-width: 400px;
   flex-direction: column;
   margin-top: 30px;
-  max-width: 400px;
+}
+.descrizione-j p{
+  margin-bottom: 30px;
+}
+.descrizione-j span{
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.descrizione-j>a{
+  font-size: 3rem;
 }
 .blocco-img img{
-  width: 800px;
+  width: 715px;
   position: absolute;
   margin-top: 35px;
   margin-left: 15px;
@@ -92,10 +110,29 @@ main{
   margin: 0 auto;
 }
 
+
+.first-row .titolo-h2{
+  margin-bottom: 30px;
+}
+/* regole per i fake input radio-box */
+.radio-box{
+  font-weight: 550;
+}
+.radio-box i{
+  color: #e4dfdf;
+  cursor: pointer;
+}
+.radio-box i:hover{
+  color: #0061FF;
+}
+/* /regole per i fake input radio-box */
+
+/* proprietà second-row */
+
 .col{
   position: relative;
-  border: 1px solid black;
-  height: 700px;
+  border: 1px solid #D0D0D3;
+  height: 800px;
   width: calc(100% / 3);
   margin: 30px 20px;
   flex-direction: column;
@@ -104,6 +141,7 @@ main{
 }
 
 .mini-icone{
+  font-weight: 550;
   position: absolute;
   top: 5px;
   left: 50%;
@@ -113,14 +151,28 @@ main{
 .caratteristiche-col{
   margin-top: 35px;
   padding: 25px;
-  border-top: 1px solid black;
+  border-top: 1px solid #D0D0D3;
+  line-height: 35px;
 }
 .caratteristiche-col>span{
   display: block;
 }
-
 .mezza-linea{
   width: 50px;
+  color: #D0D0D3;
+}
+.titolo-h3{
+  font-weight: 900;
+  font-size: 20px;
+}
+.prezzo{
+  font-weight: 900;
+}
+.durata-servizio{
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #71808C;
 }
 
 
@@ -134,14 +186,14 @@ main{
   width: calc(100% - 40px);
   height: 200px;
   margin-bottom: 100px;
-  border: 1px solid black;
+  border: 1px solid #D0D0D3;
   /* pero ora poi si toglie */
   line-height: 45px;
 }
 p.icon{
   line-height: 30px; /*valore di prova per ora*/
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #D0D0D3;
 }
 .link-contatta{
   position: absolute;
@@ -213,6 +265,9 @@ margin-bottom: 100px;
   width:200px;
   height: 200px;
   background-color: blueviolet;
+}
+.box img{
+  object-fit: cover;
 }
 .b1{
 background-color: #A2D39B;

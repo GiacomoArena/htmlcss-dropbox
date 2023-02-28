@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;0,700;0,800;0,900;1,500&display=swap" rel="stylesheet">
 
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css' integrity='sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==' crossorigin='anonymous'/>
 
@@ -30,7 +33,7 @@
           <li><a href="#">Supporto</a></li>
           <li><a href="#">Contatta l'ufficio vendite</a></li>
           <li><a href="#">Accedi</a></li>
-          <li><a class="inizia-button" href="#">inizia</a></li>
+          <li><a class="blue-link" class="inizia-button" href="#">inizia</a></li>
         </ul>
       </section>
     </div>
@@ -42,14 +45,18 @@
 <!-- qui metteremo na section che contiene la parte di testo in piccolo sulla sinistra con i vari link, che chiameremo descrizione-j -->
       <section class="descrizione-j d-flex">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nulla ipsa neque placeat beatae aperiam quod consequatur tempora possimus? Iusto neque distinctio rem deserunt, laboriosam incidunt explicabo quam facere porro.
+          finalmente tuti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. 
+          Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intellligente e integrato per ottiimizzare il flusso di lavoro esistente.
         </p>
 
-        <a href="#">Inizia la tua prova gratuita</a>
+        <div>
+          <a class="blue-link" href="#">Inizia la tua prova gratuita</a>
+        </div>
+        
 
         <span>Annulla in qualsiasi momento</span>
 
-        <a href="#arrow">freccia che ti porta sotto</a>
+        <a  href="#arrow"><i class="fa-solid fa-arrow-down"></i></a>
       </section>
       <section class="blocco-img">
         <img src="img/jumbo.png" alt="descrizione">
@@ -63,12 +70,16 @@
     <div class="container">
       <!-- questa sarà la section che contiene la parte di titolo con annesso i radio input prima delle tre colonne -->
       <section class="first-row">
-        <h2 class="titolo-h2 ">Trova il piano Dropbox Business che fa per te</h2>
-        <div class="input-size">
-          <input type="radio" id="fatturazione-m">
-          <label for="fatturazione-m">Fatturazione mensile</label>
-          <input type="radio" id="fatturazione-a">
-          <label for="fatturazione-a">Fatturazione annuale</label>
+        <h2 id="arrow" class="titolo-h2 ">Trova il piano Dropbox Business che fa per te</h2>
+        <div class="radio-box">
+          <span>
+            <i class="fa-solid fa-circle-dot"></i>
+            Fatturazione mensile
+          </span>
+          <span>
+            <i class="fa-solid fa-circle-dot"></i>
+            fatturazione annuale
+          </span>
         </div>
       </section>
       <!-- questa section conterrà le tre colonne in verticale con i vari contenuti ogniuno in un div che avrà al suo interno la flex direction column -->
@@ -99,7 +110,7 @@
               <!-- funzioni pacchetto -->
               <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
               <div class="prova-gratis">
-                <a href="#">Prova gratis per 30 giorni</a>
+                <a class="blue-link" href="#">Prova gratis per 30 giorni</a>
               </div>
               <div class="prova-gratis">
                 <span>oppure</span>
@@ -146,7 +157,7 @@
             <!-- funzioni pacchetto -->
             <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
             <div class="prova-gratis">
-              <a href="#">Prova gratis per 30 giorni</a>
+              <a class="blue-link" href="#">Prova gratis per 30 giorni</a>
             </div>
             <div class="prova-gratis">
               <span>oppure</span>
@@ -194,7 +205,7 @@
             <!-- funzioni pacchetto -->
             <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
             <div class="prova-gratis">
-              <a href="#">Prova gratis per 30 giorni</a>
+              <a class="blue-link" href="#">Prova gratis per 30 giorni</a>
             </div>
             <div class="prova-gratis">
               <span>oppure</span>
@@ -310,7 +321,7 @@
       <section class="sixth-row">
         <!-- questo sarà un div contenitore con il titolo (h2) ed il link (scopri di più) -->
         <div>
-          <h2 class="titolo-h2" id="arrow">Più di 500.000 team utilizzano Dropbox Business</h2>
+          <h2 class="titolo-h2" >Più di 500.000 team utilizzano Dropbox Business</h2>
           <a href="#">Scopri di più sui nostri clienti</a>
         </div>
       </section>
@@ -318,10 +329,10 @@
     <div class="container2 d-flex">
       <div class="big-box d-flex">
         <section class="box-contenitore d-flex">
-          <div class="box b1"></div>
-          <div class="box b2"></div>
-          <div class="box b3"></div>
-          <div class="box b4"></div>
+          <div class="box b1"> <img src="img/designit.svg" alt="logo"></div>
+          <div class="box b2"><img src="img/arizona_state_university.svg" alt=""></div>
+          <div class="box b3"><img src="img/university_of_florida.svg" alt=""></div>
+          <div class="box b4"><img src="img/topps.svg" alt=""></div>
         </section>
       </div>
 
@@ -333,10 +344,10 @@
 
       <div class="big-box d-flex">
         <section class="box-contenitore d-flex">
-          <div class="box b5"></div>
-          <div class="box b6"></div>
-          <div class="box b7"></div>
-          <div class="box b8"></div>
+          <div class="box b5"><img src="img/world_bicycle_relief.svg" alt=""></div>
+          <div class="box b6"><img src="img/hearst_corp.svg" alt=""></div>
+          <div class="box b7"><img src="img/lonely_planet.svg" alt=""></div>
+          <div class="box b8"><img src="img/clear_channel.svg" alt=""></div>
         </section>
       </div>
     </div>
