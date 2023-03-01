@@ -25,6 +25,14 @@ ul{
   background-color: #0061FF;
   padding: 6px 18px;
 }
+.opacity:hover{
+  transition: all 1s;
+  filter: opacity(0.9);
+}
+.dark:hover{
+  transition: all 1s;
+  background-color: #c2c9cf;
+}
 .titolo-h2{
   font-size: 1.7rem;
   font-weight: 800;
@@ -224,16 +232,22 @@ main{
 }
 
 .second-row ul li{
+  padding: 0px 14px;
+  position: relative;
   font-weight: 600;
   font-size: 13px;
   margin-top: 20px;
 }
 .second-row ul li a i{
+  position: absolute;
+  left: -3px;
+  top: 3px;
   font-size: 12px;
 }
 .prova-gratis{
-  margin: 40px 20px;
+  margin: 40px 0px;
   font-size: 13px;
+  text-align: center;
   }
 .acquista-ora{
   font-size: 13px;
@@ -383,11 +397,7 @@ margin-bottom: 100px;
 }
 /*\\ proprietà sixth-row */
 
-
-
-
-
-
+/* griglia adaptive con immagini e testo ceentrale "7th row" */
 .container2{
   width: 100%;
   justify-content: space-between;
@@ -408,6 +418,7 @@ margin-bottom: 100px;
   width:50%;
   height: 15vw;
   background-color: blueviolet;
+  cursor: pointer;
 }
 .box img{
   filter: invert(1);
@@ -416,6 +427,9 @@ margin-bottom: 100px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.box:hover{
+  border: 10px solid rgba(255, 255, 255, 0.366);
 }
 .b1{
 background-color: #A2D39B;
@@ -461,7 +475,10 @@ background-color: #A2D39B;
 .testo-centrale h1{
   margin:0;
 }
+/* \\griglia adaptive con immagini e testo ceentrale "7th row"\\ */
 
+
+/* parte contenente il rettangolo azzurro con il pulsante "8th row" */
 .rettangolo-box{
   justify-content: space-around;
   align-items: center;
@@ -480,7 +497,9 @@ background-color: #A2D39B;
   padding: 7px 30px;
   background-color: white;
 }
+/* \\parte contenente il rettangolo azzurro con il pulsante "8th row"\\ */
 
+/* ultimo container prima del footer contenente il 2° bonus  */
 .last-div{
   margin-bottom: 100px;
 }
@@ -508,46 +527,7 @@ background-color: #A2D39B;
 }
 
 
-
-footer{
-  background-color: black;
-  width: 100%;
-  height: 400px;
-}
-.last-container{
-  width: 80vw;
-  margin:0 auto;
-  justify-content: space-between;
-}
-footer ul{
-  margin-right:40px;
-  line-height: 2;
-}
-footer ul li a{
-  color: white;
-  font-size: 14px;
-}
-.mini-title{
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: white;
-}
-footer span{
-  color: white;
-}
-
-
-
-
-
-
-
-
-
-
-/* BONUS RULES */
+/* BONUS2 RULES */
 .bonus2{
   font-size: 14px;
   padding: 10px 0;
@@ -579,4 +559,69 @@ footer span{
   display: none;
 }
 
-/* \\\ BONUS RULES */
+/* \\\ BONUS2 RULES */
+/* \\ultimo container prima del footer contenente il 2° bonus \\ */
+
+/* inizio Footer  */
+footer{
+  background-color: black;
+  width: 100%;
+  height: 500px;
+}
+.last-container{
+  width: 80vw;
+  margin:0 auto;
+  justify-content: space-between;
+}
+footer ul{
+  margin-right:40px;
+  line-height: 2;
+}
+footer li a:hover{
+  text-decoration: underline;
+}
+footer ul li a{
+  color: white;
+  font-size: 14px;
+}
+.mini-title{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  cursor: pointer;
+}
+footer span{
+  color: white;
+}
+footer .mezza-linea{
+  margin-top: 50px;
+  margin-bottom: 70px;
+  color: #ffffffae;
+}
+.nazionalità{
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.734);
+}
+/* Ending */
+
+
+#nazioni {
+  cursor: pointer;
+  background-color: #000000;
+  border: 1px solid black;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 8px;
+}
+#nazioni:focus {
+  border-color: #0077FF;
+  box-shadow: 0 0 5px #0077FF;
+}
+#nazioni option {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 8px;
+}
