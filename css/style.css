@@ -57,7 +57,7 @@ header{
   padding-top: 20px;
   background-color: #B4D0E7;
   width: 80%;
-  height: 650px;
+  height: 700px;
   margin: 0 auto;
   position: relative;
   flex-wrap: wrap;
@@ -88,7 +88,7 @@ header{
   font-size: 3rem;
 }
 .blocco-img img{
-  width: 715px;
+  width: 800px;
   position: absolute;
   margin-top: 35px;
   margin-left: 15px;
@@ -337,22 +337,24 @@ margin-bottom: 100px;
 
 
 .container2{
+  width: 100vw;
   justify-content: space-between;
 }
 
 .big-box{
   justify-content: space-between;
-  width: 400px;
-  min-width: 400px;
+  width: 30%;
+  /* min-width: 400px; */
 }
 .box-contenitore{
+  width: 100%;
   flex-wrap: wrap;
   align-content: flex-start;
 }
 .box{
   position: relative;
-  width:200px;
-  height: 200px;
+  width:50%;
+  height: 15vw;
   background-color: blueviolet;
 }
 .box img{
@@ -390,9 +392,9 @@ background-color: #A2D39B;
 
 .testo-centrale{
   background-color: #F5F5F5;
-  width: 100%;
+  width: 40vw;
   text-align: justify;
-  height: 400px;
+  height: 30vw;
   overflow: auto;
   padding: 5%;
   padding-top: 30px;
