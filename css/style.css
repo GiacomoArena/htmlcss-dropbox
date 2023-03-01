@@ -369,8 +369,39 @@ p.icon{
   margin-bottom: 50px;
 }
 .vantaggi-img img{
+  cursor: pointer;
   width: 100%;
+  /* transition: all 2s; */
 }
+/* Bonus */
+.vantaggi-img img:hover{
+  animation: trema 0.3s infinite;
+  animation-timing-function:ease-out
+}
+
+@keyframes trema{
+  0%{
+    transform: rotate(0deg);
+  } 25% {
+    transform: rotate(2deg);
+  } 50% {
+    transform: rotate(4deg);
+  } 60% {
+    transform: rotate(2deg);
+  } 75% {
+    transform: rotate(0deg);
+  } 80% {
+    transform: rotate(-2deg);
+  } 90% {
+    transform: rotate(-4deg);
+  } 95% {
+    transform: rotate(-2deg);
+  } 100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* \\Bonus\\ */
 .vantaggi-img h3{
   font-size: 20px;
   margin-bottom: 15px;
@@ -569,9 +600,14 @@ footer{
   height: 500px;
 }
 .last-container{
+  position: relative;
   width: 80vw;
   margin:0 auto;
   justify-content: space-between;
+}
+.last-container i{
+  color: white;
+  font-size: 17px;
 }
 footer ul{
   margin-right:40px;
@@ -604,9 +640,7 @@ footer .mezza-linea{
   cursor: pointer;
   color: rgba(255, 255, 255, 0.734);
 }
-/* Ending */
-
-
+/* menu a tendina per scegliere la .azionalità */
 #nazioni {
   cursor: pointer;
   background-color: #000000;
@@ -625,3 +659,8 @@ footer .mezza-linea{
   font-size: 16px;
   padding: 8px;
 }
+
+
+/* Ending */
+
+
