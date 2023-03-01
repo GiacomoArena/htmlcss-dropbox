@@ -79,19 +79,24 @@ header{
 }
 .descrizione-j p{
   margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 15px;
 }
 .descrizione-j span{
   margin-top: 15px;
   margin-bottom: 40px;
+  font-size: 14px;
+  font-weight: 600;
 }
 .descrizione-j>a{
   font-size: 3rem;
 }
 .blocco-img img{
-  width: 800px;
+  width: 70%;
+  max-width: 850px;
   position: absolute;
-  margin-top: 35px;
-  margin-left: 15px;
+  top: 45%;
+  left: 40%;
 }
 
 
@@ -337,7 +342,7 @@ margin-bottom: 100px;
 
 
 .container2{
-  width: 100vw;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -455,17 +460,21 @@ background-color: #A2D39B;
   border-bottom:  1px solid #D0D0D3;
 }
 
+
+
 footer{
   background-color: black;
   width: 100%;
   height: 400px;
 }
-
+.last-container{
+  width: 80vw;
+  margin:0 auto;
+  justify-content: space-between;
+}
 footer ul{
   margin-right:40px;
   line-height: 2;
-}
-.list{
 }
 footer ul li a{
   color: white;
